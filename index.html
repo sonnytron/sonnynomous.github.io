@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<title>
-		Tech News, Reviews... Sorta
-	</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://www.sortatech.com/images/cars_road_houses.jpg');
+      opacity: 1.0;
+      background-size: cover;
+      color: black;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #c9bab0;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid #c9bab0;
+      border-radius: 30%;
+      width: 200;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Sorta Tech News</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Blog Posts</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  <h1>This is hopefully Sonny's Page</h1>
-  <p>Hosted on GitHub</p>
+  <header>
+    <img src="http://www.sortatech.com/images/sonny_profile.jpg">
+    <h1>Sonny's Blog: Sorta Tech</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Updates</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>1080 or Bust?</h2>
+    <p>The GTX 1080 has just been announced, along with some tests and benchmarks. The thing is, we have no idea whether or not the Founder's Edition will be the only one available at the launch date. Until some vendor versions are announced and possibly tested, it's really hard to gauge the value of the card. I'm excited for what summer will bring!</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Swift? I Objectively C You</h2>
+    <p>I've been on the fence about adopting Swift as my primary language for quite some time. The things that bother me are that the language is constantly being updated. Whatever you write/learn now, will drastically change within a year. I feel as though the language itself should stabilize so that developers are less surprised by dynamic architecture changes. But with Swift 3 on the horizon and my new job teaching me Swift for client work, I might need to change my views Swiftly.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>It's Time for Something Different</h2>
+    <p>It's time that I take my blogging and writing a lot more seriously. I need a way to catalog my growth as an engineer and professional, and it's really hard to kind of just "remember" what you've done. At a certain point, it becomes necessary to keep a log of everything you do, and all the things you think about. That way, some time later, you can look back at what you've done and think, "Man, what the fuck was I <em>thinking</em>?" Well Sonny, "Not much", apparently.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
 </body>
-</html>
