@@ -1,0 +1,46 @@
+header {
+  text-align: center;
+  background: url('/images/cars_road_houses.jpg');
+  opacity: 1.0;
+  background-size: cover;
+  color: black;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #c9bab0;
+}
+h1 {
+  font-size: 70px;
+}
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid #c9bab0;
+  border-radius: 30%;
+  width: 200px;
+}
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}
