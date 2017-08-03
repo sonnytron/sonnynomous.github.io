@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AJ Rodriguez: Tech Blog and Portfolio</title>
-  <link href="/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 </head>
@@ -25,7 +26,7 @@
                 <a href="#experience">Experience</a>
             </li>
             <li>
-                <a href="#education">Qualifications</a>
+                <a href="#qualifications">Qualifications</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
@@ -63,11 +64,10 @@
                         <img src="images/project.jpg" />
                     </div>
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>New Site Layout!</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                          I hope you enjoy the new layout! I found a template on GitHub and I'm using it.
                         </p>
-                        <a href="#">View Project</a>
                     </div>
                 </div>
 
@@ -76,11 +76,11 @@
                         <img src="images/project.jpg" />
                     </div>
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Android Room Persistence</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                          I'll be sharing a library I wrote using Android's Room persistence updates.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="#">PlaceHolder Link</a>
                     </div>
                 </div>
             </div>
@@ -115,4 +115,133 @@
             </div>
         </div>
     </div>
+
+    <div id="qualifications">
+      <div class="container">
+        <h2 class="heading">Qualifications</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div data-date="July 2016 – September 2016">
+                <h3 class="heading">CodePath Android Bootcamp</h3>
+                <h4>12 Week Remote - Graduate</h4>
+                <p>
+                  Applied to CodePath Remote Program in June 2016 and was accepted into their 12 week remote program.\n
+                  While working full time as a mobile developer for iOS in Swift, spent over 15 hours every week completing my projects.\n
+                  Relevant skills and frameworks include Android N, Java, RetroFit, Glide, RxJava and Realm.
+                </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 class="heading">Skills</h3>
+            <ul>
+              <li>Objective-C</li>
+              <li>Swift</li>
+              <li>Java</li>
+              <li>Kotlin</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="background-alt">
+      <h2 class="heading">Projects</h2>
+      <div class="container">
+        <div class="row">
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img src="images/creatorsstudio.png" alt="Image of Creator's Studio Android Application">
+            </div>
+            <div class="project-info">
+              <h3>LINE Creator's Studio Android Application</h3>
+              <p>
+                Joined team of Android developers to produce application allowing users to create, edit and upload LINE chat application stickers using their Android device.\n
+                Prior to starting, my only exposure to Android development was the CodePath bootcamp. My team also elected to use Kotlin as the only language for development.\n
+                My contributions include updating UI to meet designer specifications, writing user information fragments and logic, adding JUnit/Espersso tests and bug fixes during QA phase.
+                Relevant third party libraries include RetroFit, RxJava, Realm, Glide and Mockito. Application was #1 downloaded in Japan on Google Play Store in its first month of release.
+              </p>
+              <a href="https://play.google.com/store/apps/details?id=com.linecorp.usersticker&hl=en">View Project</a>
+            </div>
+          </div>
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img src="images/rovertown.jpg" alt="Image of RoverTown iOS Application">
+            </div>
+            <div class="project-info">
+              <h3>RoverTown iOS Application</h3>
+              <p>
+                Sole iOS Developer for RoverTown application. Completed three month iOS Apprenticeship under LaunchCode advisory.\n
+                Upon completion of apprenticeship, was promoted to senior engineer on project. Developed new features, implemented stability fixes and wrote internal testing.\n
+                Useful libraries include AFNetworking, SDWebImage and native Cocoa Frameworks.\n
+                Application retrieves college discounts from server based on user's geo location and shows user relevant discounts in their area.
+              </p>
+              <a href="https://itunes.apple.com/us/app/rovertown-student-discounts-for-college/id499947896?mt=8">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      Born in Southern California to a minority family, as a first generation college student, I faced a lot of challenges during my adolescency and maturing adulthood.\n
+                      When I entered college, I knew teachers had called me "very smart, but not motivated" but I had no idea how far that could go if I applied effort.
+                      After spending a few years repairing remedial education and studies in math and literacy, I was accepted into University of California, San Diego's Engineering School for Environmental Engineering.
+                      Upon graduation, I quickly realized that today's problems aren't so easily solved with the physical engineering science, as resources and energy are quickly becoming scarce and organizations and governments aren't keen to invest into mechanical and chemical engineering necessary to solve climate problems.
+                      I still wanted to help people, but I retroactively adapted my discipline to computer science with an emphasis on Software Development Engineering.
+                      The path toward becoming a Software Engineer was long, harsh and full of setbacks. But I had a lot of experience with setbacks. I had a lot of experience with rejection and failure.
+                      So I kept rowing.
+                      Now I live in Fukuoka Japan and I work for one of the largest social networking technology companies in the world. Where will I be next? Let's find out.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+      <h2>Need a ring?</h2>
+      <div id="contact-form">
+        <form method="POST" action="https://formspree.io/watashiwaaj@gmail.com">
+                <input type="hidden" name="_subject" value="Inquiry from GitHub Spaces" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Please fill this out." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+      </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 AJ Rodriguez
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/sonnytron" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/caitsith777" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sonny-rodriguez-9a52377b/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
